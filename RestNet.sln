@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestNet Core", "RestNet Core\RestNet Core.csproj", "{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestNet Data", "RestNet Data\RestNet Data.csproj", "{ABF91343-6170-4080-B584-249D14216252}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestNet Utilities", "RestNet Utilities\RestNet Utilities.csproj", "{203C0B60-8610-440D-BEBE-A9E6D525CAAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF91343-6170-4080-B584-249D14216252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF91343-6170-4080-B584-249D14216252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF91343-6170-4080-B584-249D14216252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF91343-6170-4080-B584-249D14216252}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203C0B60-8610-440D-BEBE-A9E6D525CAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203C0B60-8610-440D-BEBE-A9E6D525CAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203C0B60-8610-440D-BEBE-A9E6D525CAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203C0B60-8610-440D-BEBE-A9E6D525CAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+# Helicon ISAPI_Rewrite configuration file
+# Version 3.1.0.32
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/sections/{sectionId}/subsections
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/sections/(.*?)/subsections$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/sections/{sectionId}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/sections/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/sections
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/sections$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/documents/{documentId}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/documents/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/documents
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/documents$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/links/{linkId}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/links/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/links
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/links$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/notices
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/notices$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/contacts/{contactId}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/contacts/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/displayContent/contacts
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]		
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/displayContent/contacts$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/attachments
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/attachments$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/history
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/history$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/notes
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/notes$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/quotingactions/{quotingActionName}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/quotingactions/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}/quotingactions
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)/quotingactions$ default.rnx?resourceName=Mocker&_mocks=GET,html,program/displayContent/notices.html;GET,xhtml,program/displayContent/notices.xhtml;GET,xml,program/displayContent/notices.xml;GET,json,program/displayContent/notices.json;POST,noticeXMLFullRepresentation,program/displayContent/notice/noticeXMLFullRepresentation.xml;POST,noticeJSONFullRepresentation,program/displayContent/notice/noticeJSONFullRepresentation.json;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs/{programName}
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs/(.*?)$ default.rnx?resourceName=Mocker&_mocks=GET,xml,program/programXml.xml;PUT,programXml,program/programXml.xml;DELETE,,;GET,joel,joel.txt&%1 [NC,L,U] 
+
+# /{organizationId}/api/rest/v1/programs
+RewriteCond %{QUERY_STRING} ^(.*)$ [NC]
+RewriteRule ^(.*?)/api/rest/v1/programs$ default.rnx?resourceName=Mocker&_mocks=GET,xhtml|html,programs/programs.xhtml;GET,xml,programs/programs.xml;GET,json,programs/programs.json;POST,programXml,program/programXml.xml;GET,joel,joel.txt&%1 [NC,L,U] 
+

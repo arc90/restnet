@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="RestNet.ResourceBase">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ResourceBase.cs</FileName>
+      <HashCode>CIAAAAAQBggAJIBEABAAEIYAiAEAABAAAACAAADgAAg=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RestNet.ErrorHandler">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ErrorHandler.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIEgAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestNet.RepresentationType">
+    <Position X="5.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>RepresentationType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAQAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="RestNet.RequestMethod">
+    <Position X="8.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RepresentationType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAIBAAAAAAIAACAEAABAAAAAAAABAAAg=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

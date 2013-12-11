@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9427B2DD-13B9-4890-AD4C-B2E76BD2BDE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestNet</RootNamespace>
+    <AssemblyName>RestNet Core</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthUtils.cs" />
+    <Compile Include="HttpModule.cs" />
+    <Compile Include="IRestNetAuth.cs" />
+    <Compile Include="LdapAuthentication.cs" />
+    <Compile Include="LdapPrincipal.cs" />
+    <Compile Include="Mocker.cs" />
+    <Compile Include="PagingCriteria.cs" />
+    <Compile Include="PersephonePipeline\FilterChain.cs" />
+    <Compile Include="PersephonePipeline\PipelineConfigurationSection.cs" />
+    <Compile Include="PersephonePipeline\PipelineFactory.cs" />
+    <Compile Include="PersephonePipeline\PipelineManager.cs" />
+    <Compile Include="ResourceBase.cs" />
+    <Compile Include="RepresentationType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RestNetUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESTNet Class Diagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\RestNet Utilities\RestNet Utilities.csproj">
+      <Project>{203C0B60-8610-440D-BEBE-A9E6D525CAAC}</Project>
+      <Name>RestNet Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestNet Data\RestNet.Data.csproj">
+      <Project>{ABF91343-6170-4080-B584-249D14216252}</Project>
+      <Name>RestNet.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
